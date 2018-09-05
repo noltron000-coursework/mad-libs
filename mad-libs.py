@@ -59,6 +59,7 @@ def mad_libs():
 	verb_present1 = word_list[8]
 	verb_present2 = word_list[9]
 	adverb1 = word_list[10]
+
 	story = f'''Once upon a time in a land far far away... An island named {place1} was in peril.
 The disaster was foretold by the {profession_plural1} who saw signs in their {adjective1} {objects_plural1}.
 They called this event "the {verb_gerund1}". In the coming days, the island began to {verb_present1} {adverb1}.
