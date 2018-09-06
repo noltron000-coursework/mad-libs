@@ -67,6 +67,7 @@ This is when the people really began to worry. Frantically, they began to flee t
 However the people had luck on this fateful day! Their neighboring island, {place2}, had a large supply of {objects_plural3}.
 They came to aid the island, using their {objects_plural3} to {verb_present2} all the {objects_plural2}.
 In doing this, the disaster faded. The people rejoiced! Peace settled into the island of {place1} once again.'''
+
 	print(story)
 
 mad_libs()
