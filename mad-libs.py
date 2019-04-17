@@ -41,12 +41,20 @@ Lets begin!
 
 # This for loop will loop through each variable and ask the user for input in each.
 
+def input_check(description):
+	while True:
+		print(description)
+		output = input("> ")
+		if len(output) != 0:
+			return output
+		else:
+			print("please enter some characters!\n")
+
 def mad_libs():
 	print(instructions)
 	word_counter = 0
 	for word in word_list:
-		print(word)
-		word_list[word_counter]=input("> ")
+		word_list[word_counter] = input_check(word_list[word_counter])
 		word_counter+=1
 	place1 = word_list[0]
 	place2 = word_list[1]
@@ -60,13 +68,15 @@ def mad_libs():
 	verb_present2 = word_list[9]
 	adverb1 = word_list[10]
 
-	story = f'''Once upon a time in a land far far away... An island named {place1} was in peril.
+	story = f'''
+Once upon a time in a land far far away... An island named {place1} was in peril.
 The disaster was foretold by the {profession_plural1} who saw signs in their {adjective1} {objects_plural1}.
 They called this event "the {verb_gerund1}". In the coming days, the island began to {verb_present1} {adverb1}.
 This is when the people really began to worry. Frantically, they began to flee the island in boats built out of {objects_plural2}.
 However the people had luck on this fateful day! Their neighboring island, {place2}, had a large supply of {objects_plural3}.
 They came to aid the island, using their {objects_plural3} to {verb_present2} all the {objects_plural2}.
-In doing this, the disaster faded. The people rejoiced! Peace settled into the island of {place1} once again.'''
+In doing this, the disaster faded. The people rejoiced! Peace settled into the island of {place1} once again.
+'''
 
 	print(story)
 
