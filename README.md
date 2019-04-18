@@ -7,7 +7,7 @@
 To set up your developer environment with this project, follow these steps:
 1. open your terminal.
 1. in your terminal, `cd` into your directory of git repositories.
-1. copy the project in your terminal using `git clone ___.`
+1. copy the project in your terminal using `git clone ___`.
 	- you can optionally fork this project, and clone your fork
 	- alternatively you can clone this project directly
 1. `cd` into the root directory of your newly cloned project.
